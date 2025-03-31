@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bytesized&family=Poppins&family=Press+Start+2P&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to right, hsl(0, 0%, 31%), transparent, hsl(0, 0%, 20%));
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: hsl(0, 2%, 18%);
+    font-family: "Press Start 2P";
+    transition: 1s;   
+}
+header:hover{
+    background-color: hsl(0, 1%, 28%);
+    font-size: 1.1em;
+}
+.logotipo{
+    padding: 20px 20px;
+    color: white;
+    text-shadow: 2px 2px 2px grey;
+    font-size: 1.5em;
+}
+ul{
+    list-style: none;    
+}
+li, a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+.navbar{
+    margin: auto
+}
+.navlinks li{
+    display: inline-block;
+    padding: 20px 20px;
+}
+main{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+h1, h2, h3{
+    font-family: "Press Start 2P";
+    text-shadow: 2px 2px 2px gray;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.FG{
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 20%;    
+    background-color: hsla(182, 25%, 50%, 0.781);
+    transition: 0.9s;
+}
+.FG:hover{
+    background-color: hsla(182, 68%, 69%, 0.945);
+}
+.FS{
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 20%;    
+    background-color:hsl(193, 27%, 32%) ;
+    transition: 0.9s;
+}
+.FS:hover{
+    background-color: hsla(195, 100%, 50%, 0.945);
+}
+.FB{
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 20%;
+    background-color: hsla(240, 100%, 50%, 0.158);
+    transition: 0.9s;
+}
+.FB:hover{
+    background-color: hsl(240, 100%, 50%);
+}
+.F{
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 20%;
+    background-color: rgba(131, 77, 182, 0.534);
+    transition: 0.9s;
+}
+.F:hover{
+    background-color: rgb(139, 36, 236);
+}
+.cont{
+    background-color: blue;
+    flex-basis: 300px;
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: fantasy;
+}
+.item{
+    background-color: rgb(216, 123, 43);
+    border: 10px solid black;
+    flex-basis: 300px;
+    flex-shrink: 0;    
+}
+.item2{
+    background-color: brown;
+    border: 10px solid black;
+    flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+.item3{
+    background-color: blueviolet;
+    border: 10px solid black;
+    flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+.itemodd{
+    background-color: blueviolet;
+    border: 10px solid black;
+    flex: 1 1 300px;
+    
+}
+.item4{
+    background-color: blueviolet;
+    border: 10px solid black;
+    flex-basis: 250px;
+    flex-shrink: 1;
+    flex-grow: 2;
+}
+.p1{
+    font-size: 1.5em;
+    margin:10px;
+}
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding: 20px 20px;
+    text-align: center;
+}

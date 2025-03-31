@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>        
+        <span class="logotipo"> &ltNalo&gt</span>
+        <nav class="navbar">
+            <ul class="navlinks">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Controle de tamanho dos elementos</h1>
+        <br>
+        <div class="container">
+            <div class="FG">
+                <h3>Flex Grow</h3>
+                <p>Define a capacidade do item de crescer quando há espaço disponível no contêiner.
+                <br>
+                    flex-grow: 0; → O item não cresce (padrão).
+                <br>
+                    flex-grow: 1; → O item cresce e ocupa o espaço disponível.
+                <br>
+                    flex-grow: 2; → O item cresce duas vezes mais que os itens com flex-grow: 1</p>
+            </div>
+            <div class="FS">
+                <h3>Flex Shrink</h3>
+                <p>Determina a capacidade do item de encolher quando o espaço é reduzido.
+                <br>
+                    flex-shrink: 0; → O item não encolhe.
+                <br>
+                    flex-shrink: 1; → O item pode encolher se necessário (padrão).
+                <br>
+                    flex-shrink: 2; → O item encolhe duas vezes mais rápido que os com flex-shrink: 1</p>
+            </div>
+            <div class="FB">
+                <h3>Flex basis</h3>
+                <p>Define o tamanho inicial do item antes da distribuição do espaço disponível.
+                <br>
+                    Pode ser um valor fixo (px, em, %, etc.) ou auto.
+                <br>
+                    flex-basis: auto; → O tamanho do item é baseado no conteúdo (padrão).
+                <br>
+                    flex-basis: 100px; → O item começa com 100px antes do ajuste.</p>
+            </div>
+            <div class="F">
+                <h3>Flex</h3>
+                <p>A propriedade flex é um atalho (shorthand) que define três propriedades de um item flexível.
+                <br>
+                    flex: flex-grow flex-shrink flex-basis;
+
+                </p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        
+        <article>
+            <h2>Exemplos Práticos</h2>
+            <p class="p1">Se eu delimitar <strong>meu flex-basis: 300px</strong> e por <strong>flex-shrink:0</strong> vai ocorrer que os itens irão sumir da área principal da interface do usuário caso esse tenha uma tela menor que 900px. Para comprovar isso só basta testar o flexbox da página reduzindo o tamanho da aba. Com isso você notará que o elemento C estará com uma parte desaparecida.</p>
+            <div class="cont">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <p class="p1">Nesse caso o <strong>flex-grow será igual 1</strong> e o <strong>flex-shrink seria igual a 1</strong> também, logo o item irá crescer e diminuir se adequando totalmente ao espaço que lhe é distribuído</p>
+            <div class="cont">
+                <div class="item2">A</div>
+                <div class="item2">B</div>
+                <div class="item2">C</div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <p class="p1">Mas o que ocorre se apena 1 elemento conter o flex-grow:1 e os outros tiverem o flex-grow:0 ?<br>
+            Acontece que <strong>somente o elemento que tem flex-grow:1 irá crescer</strong>.</p>
+            <div class="cont">
+                <div class="item3">0</div>
+                <div class="itemodd">1</div>
+                <div class="item3">0</div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <p class="p1">No exemplo seguinte foi aplicado um <strong>flex-grow:2</strong> o que demonstra que <strong>o elemento escolhido crescerá duas vezes mais rápido</strong>.</p>
+            <div class="cont">
+                <div class="item3">0</div>
+                <div class="itemodd">1</div>
+                <div class="item4">2</div>
+            </div>
+
+        </article>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <h2>NALO</h2>
+    </footer>
+</body>
+</html>
